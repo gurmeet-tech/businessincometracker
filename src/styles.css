@@ -409,7 +409,6 @@ ol {
   color: var(--text-2);
   font-size: 12.5px;
   font-weight: 500;
-  cursor: pointer;
   transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
 }
 
@@ -592,7 +591,6 @@ ol {
   border: 1px solid transparent;
   border-radius: var(--radius);
   background: transparent;
-  cursor: pointer;
   text-align: left;
   transition: background 0.13s ease, border-color 0.13s ease;
 }
@@ -783,7 +781,6 @@ ol {
   background: rgba(255, 255, 255, 0.025);
   color: var(--faint);
   font-size: 12px;
-  cursor: pointer;
   transition: background 0.14s ease, border-color 0.14s ease, color 0.14s ease;
 }
 
@@ -819,7 +816,6 @@ ol {
   border-radius: var(--radius-sm);
   background: var(--surface-2);
   color: var(--text-2);
-  cursor: pointer;
   transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
 }
 
@@ -837,7 +833,6 @@ ol {
   border: 1px solid transparent;
   border-radius: 50%;
   background: transparent;
-  cursor: pointer;
   transition: border-color 0.14s ease;
 }
 
@@ -920,7 +915,6 @@ ol {
   background: transparent;
   color: var(--faint);
   font-size: 10px;
-  cursor: pointer;
 }
 
 .palette-esc:hover {
@@ -962,7 +956,6 @@ ol {
   color: var(--text-2);
   font-size: 13px;
   text-align: left;
-  cursor: pointer;
 }
 
 .palette-item.active {
@@ -1050,7 +1043,6 @@ ol {
   font-weight: 550;
   line-height: 1;
   white-space: nowrap;
-  cursor: pointer;
   transition: background 0.14s ease, border-color 0.14s ease, color 0.14s ease,
     transform 0.08s ease;
   user-select: none;
@@ -1150,7 +1142,6 @@ ol {
   border-radius: 5px;
   background: transparent;
   color: var(--muted);
-  cursor: pointer;
   transition: background 0.13s ease, color 0.13s ease, border-color 0.13s ease;
 }
 
@@ -1193,7 +1184,6 @@ ol {
   color: var(--accent);
   font-size: 12px;
   font-weight: 500;
-  cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1264,7 +1254,6 @@ ol {
 .select {
   appearance: none;
   padding-right: 26px;
-  cursor: pointer;
 }
 
 .select-chevron {
@@ -1334,7 +1323,6 @@ ol {
   border: 0;
   background: transparent;
   color: inherit;
-  cursor: pointer;
   display: inline-flex;
   padding: 2px;
 }
@@ -1353,7 +1341,6 @@ ol {
   border: 1px solid transparent;
   border-radius: 50%;
   color: rgba(0, 0, 0, 0.65);
-  cursor: pointer;
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
@@ -1529,7 +1516,6 @@ ol {
   background: transparent;
   color: var(--muted);
   font-weight: 500;
-  cursor: pointer;
   white-space: nowrap;
   transition: background 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
 }
@@ -1603,7 +1589,6 @@ ol {
   color: var(--text-2);
   font-size: 12.5px;
   text-align: left;
-  cursor: pointer;
 }
 
 .menu-item:hover {
@@ -2349,7 +2334,6 @@ ol {
   background: transparent;
   color: var(--faint);
   font-size: 11px;
-  cursor: pointer;
   padding: 2px;
 }
 
@@ -2385,7 +2369,6 @@ ol {
   font-size: 11.5px;
   outline: 0;
   appearance: none;
-  cursor: pointer;
   text-overflow: ellipsis;
   transition: border-color 0.14s ease, color 0.14s ease, background-color 0.14s ease;
 }
@@ -2512,7 +2495,6 @@ ol {
 }
 
 .db-row {
-  cursor: pointer;
   outline: 0;
   transition: background 0.1s ease;
 }
@@ -2552,7 +2534,6 @@ ol {
   font: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
-  cursor: pointer;
 }
 
 .th-sort:hover {
@@ -2720,7 +2701,6 @@ ol {
   color: var(--text-2);
   font-size: 11.5px;
   text-align: left;
-  cursor: pointer;
 }
 
 .group-toggle:hover {
@@ -2840,7 +2820,6 @@ ol {
 }
 
 .mini-table tbody tr {
-  cursor: pointer;
   transition: background 0.1s ease;
 }
 
@@ -2918,7 +2897,6 @@ ol {
   border: 0;
   background: transparent;
   text-align: left;
-  cursor: pointer;
 }
 
 .saved-view-name {
@@ -3096,7 +3074,6 @@ ol {
   border-radius: 4px;
   background: transparent;
   color: var(--faint);
-  cursor: pointer;
   opacity: 0;
   transition: opacity 0.12s ease, background 0.12s ease, color 0.12s ease;
 }
@@ -3129,7 +3106,6 @@ ol {
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.045);
   text-align: left;
-  cursor: pointer;
   overflow: hidden;
   transition: background 0.12s ease;
 }
@@ -3178,7 +3154,6 @@ ol {
   background: transparent;
   color: var(--faint);
   font-size: 9px;
-  cursor: pointer;
 }
 
 .calendar-more:hover {
@@ -3398,7 +3373,6 @@ ol {
   background-position: calc(100% - 11px) 11px, calc(100% - 7px) 11px;
   background-size: 4px 4px, 4px 4px;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .inline-input:hover,
@@ -3871,7 +3845,6 @@ ol {
   border-bottom: 1px solid rgba(255, 255, 255, 0.038);
   background: transparent;
   text-align: left;
-  cursor: pointer;
 }
 
 .attention-row:hover {
@@ -4312,7 +4285,6 @@ ol {
   border-radius: 4px;
   background: transparent;
   text-align: left;
-  cursor: pointer;
 }
 
 .breakdown-row:hover {
@@ -4412,7 +4384,6 @@ ol {
   border-bottom: 1px solid rgba(255, 255, 255, 0.035);
   background: transparent;
   text-align: left;
-  cursor: pointer;
 }
 
 .ledger-row:last-child {
@@ -4700,7 +4671,6 @@ ol {
   border-radius: var(--radius);
   background: var(--surface);
   text-align: left;
-  cursor: pointer;
   transition: border-color 0.14s ease, background 0.14s ease;
 }
 
@@ -5003,7 +4973,6 @@ ol {
   border-bottom: 1px solid rgba(255, 255, 255, 0.035);
   background: transparent;
   text-align: left;
-  cursor: pointer;
 }
 
 .month-tx-row:last-child {
@@ -5081,7 +5050,6 @@ ol {
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.015);
   text-align: left;
-  cursor: pointer;
   transition: border-color 0.14s ease, background 0.14s ease, transform 0.14s ease;
 }
 
@@ -5310,7 +5278,6 @@ ol {
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   background: transparent;
   text-align: left;
-  cursor: pointer;
 }
 
 .outstanding-row:last-child {
@@ -5495,7 +5462,6 @@ ol {
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.018);
   text-align: left;
-  cursor: pointer;
   transition: background 0.13s ease, border-color 0.13s ease;
 }
 
@@ -5578,7 +5544,6 @@ ol {
   font-size: 11px;
   font-weight: 500;
   white-space: nowrap;
-  cursor: pointer;
   transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
 }
 
