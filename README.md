@@ -38,11 +38,17 @@ Because data is stored in each browser's `localStorage`, every device has its ow
 
 - Workspace records — transactions, clients, categories, saved views, and settings — are stored under `finance-tracker:workspace:v1` in `localStorage`.
 - Legacy attachment files, if any exist, are kept in local IndexedDB (`finance-tracker-files`). New records do not ask for files.
-- No API requests, analytics, Google Fonts, or external network calls are made by the app.
+- No API requests, analytics, external font CDNs, or other external network calls are made by the app.
 - Clearing browser site data removes the workspace permanently. Use Settings → Export if you want a CSV backup.
 - Money is stored as integer minor units and formatted with `Intl.NumberFormat` using the workspace currency (default INR) and locale (default en-IN).
 
 The workspace starts completely empty. There is no demo or sample data.
+
+## Typography
+
+- **Clash Display** is self-hosted from `src/assets/fonts/` and used for headings, labels, navigation, and interface text. Source: [Fontshare](https://www.fontshare.com/fonts/clash-display).
+- **Inter** is self-hosted via `@fontsource-variable/inter` and used for amounts, dates, counts, and other numeric data.
+- Fonts are bundled with the app, so no external font requests are made at runtime.
 
 ## Features
 

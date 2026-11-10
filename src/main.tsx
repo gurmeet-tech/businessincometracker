@@ -6,6 +6,7 @@ import { ToastProvider } from './context/ToastContext'
 import { ConfirmProvider } from './components/ui'
 import { DataProvider } from './context/DataContext'
 import { TransactionDrawerProvider } from './components/TransactionDrawer'
+import '@fontsource-variable/inter/wght.css'
 import './styles.css'
 
 createRoot(document.getElementById('root')!).render(

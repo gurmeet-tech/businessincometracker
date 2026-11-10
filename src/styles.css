@@ -3,10 +3,43 @@
    Base tokens, reset, typography, utilities
    ========================================================================== */
 
+@font-face {
+  font-family: 'Clash Display';
+  src: url('./assets/fonts/clash-display-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('./assets/fonts/clash-display-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('./assets/fonts/clash-display-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('./assets/fonts/clash-display-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-sans: 'Clash Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-numeric: 'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
   --bg: #191918;
   --bg-soft: #1d1d1c;
@@ -112,6 +145,18 @@ textarea,
 select {
   font-family: inherit;
   font-size: inherit;
+}
+
+input[type='date'],
+input[type='number'],
+.amount-input,
+.topbar-date,
+.hero-date,
+.formula-value,
+.cell-nowrap,
+.recharts-cartesian-axis-tick-value {
+  font-family: var(--font-numeric);
+  font-variant-numeric: tabular-nums;
 }
 
 img,
@@ -472,6 +517,7 @@ ol {
   color: #8f8d87;
   font-size: 10px;
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -957,6 +1003,7 @@ ol {
   flex: 0 0 auto;
   color: var(--faint);
   font-size: 11.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -1329,6 +1376,7 @@ ol {
   background: rgba(255, 255, 255, 0.025);
   color: var(--text-2);
   font-size: 13px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -2171,6 +2219,7 @@ ol {
   font-weight: 650;
   letter-spacing: -0.025em;
   line-height: 1.15;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2195,6 +2244,7 @@ ol {
   gap: 2px;
   font-size: 10.5px;
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -2407,6 +2457,7 @@ ol {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -2484,6 +2535,7 @@ ol {
 }
 
 .db-table .amount-cell {
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   font-weight: 550;
   white-space: nowrap;
@@ -2616,6 +2668,7 @@ ol {
   gap: 4px;
   color: var(--faint);
   font-size: 11px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -2700,6 +2753,7 @@ ol {
   gap: 12px;
   margin-left: auto;
   font-size: 10.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -2738,6 +2792,7 @@ ol {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -2798,6 +2853,7 @@ ol {
 }
 
 .mini-table .amount-cell {
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   font-weight: 550;
   white-space: nowrap;
@@ -3021,6 +3077,7 @@ ol {
   border-radius: 4px;
   color: var(--muted);
   font-size: 10.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -3109,6 +3166,7 @@ ol {
 .event-amount {
   color: var(--faint);
   font-size: 8.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   line-height: 1.3;
 }
@@ -3389,6 +3447,7 @@ ol {
   padding-left: 2px;
   font-size: 15px;
   font-weight: 600;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -3510,6 +3569,7 @@ ol {
   margin-right: 4px;
   color: var(--muted);
   font-size: 11.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -3599,6 +3659,7 @@ ol {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.3;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -3655,6 +3716,7 @@ ol {
 .tooltip-value {
   color: var(--text-2);
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -3716,6 +3778,7 @@ ol {
   font-size: 15px;
   font-weight: 650;
   letter-spacing: -0.02em;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -3757,6 +3820,7 @@ ol {
 
 .donut-legend-value {
   color: var(--text-2);
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -3765,6 +3829,7 @@ ol {
   min-width: 34px;
   text-align: right;
   color: var(--faint);
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -3881,6 +3946,7 @@ ol {
   color: var(--text-2);
   font-size: 11.5px;
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -3912,6 +3978,7 @@ ol {
 .collection-head strong {
   color: var(--text-2);
   font-size: 11.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -3986,6 +4053,7 @@ ol {
   align-items: flex-end;
   gap: 1px;
   flex: 0 0 auto;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4032,6 +4100,7 @@ ol {
   font-size: 16px;
   font-weight: 650;
   letter-spacing: -0.02em;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4069,6 +4138,7 @@ ol {
   margin-bottom: 8px;
   color: var(--muted);
   font-size: 10px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   flex-wrap: wrap;
 }
@@ -4177,6 +4247,7 @@ ol {
   font-weight: 650;
   letter-spacing: -0.03em;
   line-height: 1.15;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4187,6 +4258,7 @@ ol {
   gap: 2px;
   color: var(--faint);
   font-size: 10px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   line-height: 1.4;
 }
@@ -4208,6 +4280,7 @@ ol {
   margin-bottom: 6px;
   color: var(--faint);
   font-size: 10px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4289,6 +4362,7 @@ ol {
   align-items: flex-end;
   gap: 1px;
   flex: 0 0 auto;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   line-height: 1.3;
 }
@@ -4400,6 +4474,7 @@ ol {
   flex: 0 0 auto;
   font-size: 11px;
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -4450,6 +4525,7 @@ ol {
   font-weight: 650;
   letter-spacing: -0.03em;
   line-height: 1.15;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4495,6 +4571,7 @@ ol {
 .equation-breakdown strong {
   font-size: 14px;
   font-weight: 600;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -4544,6 +4621,7 @@ ol {
   color: var(--text-2);
   font-size: 12.5px;
   font-weight: 600;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4591,6 +4669,7 @@ ol {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.25;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4667,6 +4746,7 @@ ol {
   font-weight: 650;
   letter-spacing: -0.028em;
   line-height: 1.15;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4679,6 +4759,7 @@ ol {
   gap: 12px;
   color: var(--muted);
   font-size: 9.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   flex-wrap: wrap;
 }
@@ -4790,6 +4871,7 @@ ol {
   margin-bottom: 7px;
   color: var(--faint);
   font-size: 9.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4833,6 +4915,7 @@ ol {
 .composition-legend strong {
   color: var(--text-2);
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4877,6 +4960,7 @@ ol {
   color: var(--text-2);
   font-size: 11px;
   font-weight: 600;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -4960,6 +5044,7 @@ ol {
   flex: 0 0 auto;
   font-size: 11px;
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -5067,6 +5152,7 @@ ol {
   font-size: 13px;
   font-weight: 600;
   letter-spacing: -0.015em;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5266,6 +5352,7 @@ ol {
   color: var(--text-2);
   font-size: 11px;
   font-weight: 550;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -5351,6 +5438,7 @@ ol {
   font-weight: 650;
   letter-spacing: -0.035em;
   line-height: 1;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -5384,6 +5472,7 @@ ol {
 .collection-breakdown strong {
   font-size: 11.5px;
   font-weight: 600;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5511,6 +5600,7 @@ ol {
   padding-right: 3px;
   color: var(--faint);
   font-size: 10.5px;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -5645,6 +5735,7 @@ ol {
   gap: 0;
   flex: 0 0 auto;
   line-height: 1.3;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
@@ -5944,6 +6035,7 @@ ol {
   color: var(--text-2);
   font-size: 11px;
   font-weight: 600;
+  font-family: var(--font-numeric);
   font-variant-numeric: tabular-nums;
 }
 
